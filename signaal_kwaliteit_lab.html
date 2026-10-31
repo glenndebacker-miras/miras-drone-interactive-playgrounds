@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signaal & Verbinding Lab · CVO MIRAS</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --orange: #b94708;
+      --line: #efd7c5;
+      --ink: #35281f;
+      --muted: #715e50;
+      --soft: #fff4e8;
+      --green: #21715d;
+      --red: #a02f0d;
+      --bg-sky: #f2eae0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fffaf5;
+      color: var(--ink);
+      font: 16px/1.5 system-ui, -apple-system, sans-serif;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: auto;
+      padding: 24px 16px;
+    }
+
+    header { margin-bottom: 24px; }
+    .step {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--orange);
+      font-weight: 750;
+      margin-bottom: 4px;
+    }
+    h1 {
+      font-size: 32px;
+      letter-spacing: -1px;
+      margin: 0 0 6px;
+    }
+    h1 span { color: var(--orange); }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 360px minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0 0 16px;
+      line-height: 1.3;
+    }
+
+    .field { margin-bottom: 20px; }
+    label {
+      font-weight: 650;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    output {
+      color: var(--orange);
+      font-size: 18px;
+      font-weight: 750;
+    }
+    .hint {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 4px 0 0;
+    }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--orange);
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    /* Schakelaar voor muur */
+    .switch-box {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .switch-label-wrap { display: flex; flex-direction: column; }
+    .switch-title { font-weight: 700; font-size: 15px; }
+    .switch-desc { font-size: 13px; color: var(--muted); }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 52px;
+      height: 30px;
+      flex-shrink: 0;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #d1c2b4;
+      transition: .2s;
+      border-radius: 30px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .2s;
+      border-radius: 50%;
+    }
+    input:checked + .slider { background-color: var(--orange); }
+    input:checked + .slider:before { transform: translateX(22px); }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    button {
+      border: 1px solid #dbb99f;
+      background: white;
+      color: var(--ink);
+      padding: 8px 10px;
+      border-radius: 8px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+      text-align: left;
+      line-height: 1.3;
+    }
+    button:hover, button[aria-pressed=true] {
+      background: #ffead5;
+      border-color: var(--orange);
+      color: var(--orange);
+      font-weight: 600;
+    }
+
+    /* Simulatie / Scherm */
+    .screen-container {
+      background: var(--bg-sky);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 250px;
+    }
+
+    /* Subtiele zweefanimatie van de drone */
+    @keyframes droneHover {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-8px) rotate(1.5deg);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+    }
+
+    .drone-hover {
+      animation: droneHover 2.6s ease-in-out infinite;
+      transform-origin: 0 0;
+    }
+
+    .meters-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .meter-card {
+      background: #fffaf5;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+    }
+    .meter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+    .meter-title {
+      font-size: 13px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meter-val {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .meter-bar {
+      height: 8px;
+      background: #ebd8c8;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .meter-fill {
+      height: 100%;
+      width: 100%;
+      background: var(--green);
+      transition: width 0.2s ease, background 0.2s ease;
+    }
+
+    /* Pakketjes grid */
+    .packet-wrap {
+      background: #fffaf5;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+    .packet-desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .packet-grid {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 3px;
+    }
+    .p-dot {
+      height: 14px;
+      background: var(--green);
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+    .p-dot.lost { background: #d9534f; opacity: 0.35; }
+
+    /* Situatiebanner */
+    .status-banner {
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: var(--soft);
+      border-left: 4px solid var(--orange);
+      font-size: 14px;
+    }
+    .status-banner strong { display: block; margin-bottom: 2px; }
+
+    /* Details accordeon */
+    details {
+      margin-top: 16px;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+    summary {
+      cursor: pointer;
+      color: var(--orange);
+      font-weight: 650;
+      font-size: 14px;
+    }
+    details p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 8px 0 0;
+    }
+
+    @media (max-width: 820px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="step">Dronetechnicus · Verbinding & Telemetrie</div>
+      <h1>Signaalsterkte <span>& Kwaliteit</span></h1>
+      <p>Ontdek het verschil tussen hoe hard het radiosignaal aankomt (RSSI) en hoeveel gegevens heelhuids binnenkomen (LQ).</p>
+    </header>
+
+    <div class="layout">
+      <!-- LINKERKOLOM: CONTROLS -->
+      <section class="panel">
+        <div class="step">01 · Regel de situatie</div>
+        <h2>Bediening</h2>
+
+        <div class="field">
+          <label for="dist">Afstand tot de drone <output id="distVal">120 m</output></label>
+          <input type="range" id="dist" min="10" max="600" step="10" value="120">
+          <p class="hint">Verder weg betekent automatisch een zwakker signaal.</p>
+        </div>
+
+        <div class="field">
+          <label for="noise">Storingsbron (ruis) <output id="noiseVal">Geen</output></label>
+          <input type="range" id="noise" min="0" max="100" step="5" value="0">
+          <p class="hint">Zendmasten of motoren verstoren datapakketjes.</p>
+        </div>
+
+        <div class="switch-box">
+          <div class="switch-label-wrap">
+            <span class="switch-title">Muur of gebouw tussenin</span>
+            <span class="switch-desc">Blokkeert en dempt de radiogolven</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="wallToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="step">Kies een praktijksituatie</div>
+        <div class="buttons">
+          <button type="button" onclick="setPreset(50, 0, false)">1. Dichtbij en vrij</button>
+          <button type="button" onclick="setPreset(120, 85, false)">2. Storing nabij</button>
+          <button type="button" onclick="setPreset(500, 0, false)">3. Grote afstand</button>
+          <button type="button" onclick="setPreset(200, 20, true)">4. Achter gebouw</button>
+        </div>
+
+        <details>
+          <summary>Wat betekenen de afkortingen?</summary>
+          <p><strong>RSSI (Received Signal Strength Indicator):</strong> Hoe sterk het radiosignaal binnenkomt. Wordt uitgedrukt in dBm (negatief getal: -60 is sterker dan -90 dBm).</p>
+          <p><strong>LQ (Link Quality):</strong> Hoeveel procent van de verzonden stuurcommando's zonder fouten aankomt bij de drone.</p>
+        </details>
+      </section>
+
+      <!-- RECHTERKOLOM: SIMULATIE & STATUS -->
+      <section class="panel">
+        <div class="step">02 · Kijk naar het signaal</div>
+        <h2>Vluchtbeeld & Telemetrie</h2>
+
+        <div class="screen-container">
+          <svg id="simSvg" viewBox="0 0 620 250">
+            <!-- Achtergrond elementen -->
+            <rect x="0" y="210" width="620" height="40" fill="#e2d6c7" />
+            <line x1="0" y1="210" x2="620" y2="210" stroke="#c9b8a3" stroke-width="2" stroke-dasharray="6,4" />
+
+            <!-- OSD Display Bar bovenaan -->
+            <rect x="0" y="0" width="620" height="34" fill="#29241f" />
+            <text x="14" y="22" fill="#5cb85c" font-size="13" font-weight="700" id="osdRssi">RSSI: -72 dBm</text>
+            <text x="270" y="22" fill="#5cb85c" font-size="13" font-weight="700" id="osdLq">LQ: 100%</text>
+            <text x="520" y="22" fill="#dcd2c4" font-size="13" font-weight="700">BATT: 15.4V</text>
+
+            <!-- Piloot (TX) -->
+            <g id="pilotGroup">
+              <image href="assets/piloot.png" x="15" y="80" width="85" height="135" />
+              <text x="55" y="232" font-size="11" font-weight="700" fill="#5a4636" text-anchor="middle">ZENDER (TX)</text>
+            </g>
+
+            <!-- Radiogolven & Signaallijn -->
+            <path id="sigWave1" d="M 90 120 A 25 25 0 0 1 90 160" fill="none" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" />
+            <path id="sigWave2" d="M 102 112 A 40 40 0 0 1 102 168" fill="none" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" />
+            <line id="sigLine" x1="95" y1="140" x2="480" y2="110" stroke="#7d6350" stroke-width="2" stroke-dasharray="4,4" />
+
+            <!-- Muur / Gebouw -->
+            <g id="wallG" style="display: none;">
+              <rect x="240" y="70" width="60" height="140" rx="3" fill="#875846" stroke="#4a281c" stroke-width="2" />
+              <line x1="240" y1="105" x2="300" y2="105" stroke="#663e30" stroke-width="1.5" />
+              <line x1="240" y1="140" x2="300" y2="140" stroke="#663e30" stroke-width="1.5" />
+              <line x1="240" y1="175" x2="300" y2="175" stroke="#663e30" stroke-width="1.5" />
+              <text x="270" y="200" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">MUUR</text>
+            </g>
+
+            <!-- Storing (Ruisbron) -->
+            <g id="noiseG" style="display: none;">
+              <circle cx="270" cy="140" r="30" fill="rgba(217, 83, 79, 0.15)" stroke="#d9534f" stroke-width="1.5" stroke-dasharray="3,3" />
+              <text x="270" y="144" fill="#a02f0d" font-size="11" font-weight="700" text-anchor="middle">STORING</text>
+            </g>
+
+            <!-- Drone (RX) met vloeiende zweefanimatie -->
+            <g id="droneGroup" transform="translate(460, 100)">
+              <g class="drone-hover">
+                <image id="droneImg" href="assets/drone.png" x="-50" y="-30" width="100" height="60" />
+              </g>
+              <text x="0" y="42" font-size="11" font-weight="700" fill="#5a4636" text-anchor="middle">DRONE (RX)</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- METERS -->
+        <div class="meters-grid">
+          <div class="meter-card">
+            <div class="meter-header">
+              <span class="meter-title">Signaal (RSSI)</span>
+              <span class="meter-val" id="rssiText">-72 dBm</span>
+            </div>
+            <div class="meter-bar">
+              <div class="meter-fill" id="rssiBar" style="width: 70%;"></div>
+            </div>
+            <p class="hint">Hoe dichter bij 0, hoe sterker.</p>
+          </div>
+
+          <div class="meter-card">
+            <div class="meter-header">
+              <span class="meter-title">Kwaliteit (LQ)</span>
+              <span class="meter-val" id="lqText">100%</span>
+            </div>
+            <div class="meter-bar">
+              <div class="meter-fill" id="lqBar" style="width: 100%;"></div>
+            </div>
+            <p class="hint">Percentage ontvangen data.</p>
+          </div>
+        </div>
+
+        <!-- DATA PAKKETJES -->
+        <div class="packet-wrap">
+          <div class="packet-desc">
+            <span>Datastroom (laatste 20 pakketjes):</span>
+            <strong id="packetLossText">0 verloren</strong>
+          </div>
+          <div class="packet-grid" id="packetGrid">
+            <!-- 20 stuks via JS -->
+          </div>
+        </div>
+
+        <!-- SITUATIE STATUS -->
+        <div class="status-banner" id="statusBanner">
+          <strong id="statusTitle">Goede verbinding</strong>
+          <span id="statusText">Alle opdrachten komen goed aan. Je hebt volledige controle over het toestel.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const distInput = document.getElementById('dist');
+    const noiseInput = document.getElementById('noise');
+    const wallToggle = document.getElementById('wallToggle');
+
+    const distVal = document.getElementById('distVal');
+    const noiseVal = document.getElementById('noiseVal');
+
+    const rssiText = document.getElementById('rssiText');
+    const lqText = document.getElementById('lqText');
+    const rssiBar = document.getElementById('rssiBar');
+    const lqBar = document.getElementById('lqBar');
+
+    const osdRssi = document.getElementById('osdRssi');
+    const osdLq = document.getElementById('osdLq');
+
+    const wallG = document.getElementById('wallG');
+    const noiseG = document.getElementById('noiseG');
+    const droneGroup = document.getElementById('droneGroup');
+    const sigLine = document.getElementById('sigLine');
+
+    const statusBanner = document.getElementById('statusBanner');
+    const statusTitle = document.getElementById('statusTitle');
+    const statusText = document.getElementById('statusText');
+
+    const packetGrid = document.getElementById('packetGrid');
+    const packetLossText = document.getElementById('packetLossText');
+
+    // Bouw 20 pakketjes
+    for (let i = 0; i < 20; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'p-dot';
+      packetGrid.appendChild(dot);
+    }
+
+    function updateSim() {
+      const d = parseInt(distInput.value, 10);
+      const n = parseInt(noiseInput.value, 10);
+      const hasWall = wallToggle.checked;
+
+      distVal.textContent = d + ' m';
+      noiseVal.textContent = n > 0 ? n + '%' : 'Geen';
+
+      // 1. Bereken RSSI (dBm)
+      let rssi = Math.round(-42 - (20 * Math.log10(d / 8)));
+      if (hasWall) {
+        rssi -= 24; // Muur dempt ca. 24 dBm
+      }
+      if (rssi < -115) rssi = -115;
+
+      // 2. Bereken LQ (%)
+      let lq = 100;
+      if (rssi < -90) {
+        lq -= (Math.abs(rssi) - 90) * 4.5;
+      }
+      lq -= (n * 0.7);
+      if (hasWall) {
+        lq -= 15;
+      }
+      lq = Math.round(Math.max(0, Math.min(100, lq)));
+
+      // 3. Update meters en OSD
+      rssiText.textContent = rssi + ' dBm';
+      lqText.textContent = lq + '%';
+      osdRssi.textContent = 'RSSI: ' + rssi + ' dBm';
+      osdLq.textContent = 'LQ: ' + lq + '%';
+
+      // RSSI balk
+      const rssiPct = Math.max(0, Math.min(100, ((rssi + 110) / 60) * 100));
+      rssiBar.style.width = rssiPct + '%';
+      rssiBar.style.background = rssi > -80 ? 'var(--green)' : (rssi > -95 ? 'var(--orange)' : 'var(--red)');
+
+      // LQ balk
+      lqBar.style.width = lq + '%';
+      lqBar.style.background = lq > 80 ? 'var(--green)' : (lq > 50 ? 'var(--orange)' : 'var(--red)');
+
+      osdLq.setAttribute('fill', lq > 70 ? '#5cb85c' : (lq > 40 ? '#f0ad4e' : '#d9534f'));
+
+      // 4. Update visuele positie van drone (x tussen 160 en 560)
+      const droneX = 160 + ((d - 10) / 590) * 400;
+      droneGroup.setAttribute('transform', `translate(${droneX}, 100)`);
+      sigLine.setAttribute('x2', droneX);
+
+      // Muur & Ruis tonen
+      wallG.style.display = hasWall ? 'block' : 'none';
+      noiseG.style.display = n > 20 ? 'block' : 'none';
+
+      // 5. Update pakketjes
+      const dots = document.querySelectorAll('.p-dot');
+      let lostCount = 0;
+      dots.forEach((dot, idx) => {
+        const threshold = (idx + 1) * 5;
+        if (lq < threshold) {
+          dot.classList.add('lost');
+          lostCount++;
+        } else {
+          dot.classList.remove('lost');
+        }
+      });
+      packetLossText.textContent = lostCount === 0 ? '0 verloren' : `${lostCount} van de 20 gemist`;
+
+      // 6. Didactische status en advies
+      if (lq <= 20) {
+        statusBanner.style.borderLeftColor = 'var(--red)';
+        statusTitle.textContent = 'Gevaar: Bijna verbindingsverlies (Failsafe dreigt)';
+        statusText.textContent = 'De drone mist bijna alle stuurpakketjes. Vlieg niet verder weg. Verander van positie of activeer Return-to-Home.';
+      } else if (hasWall && lq < 75) {
+        statusBanner.style.borderLeftColor = 'var(--orange)';
+        statusTitle.textContent = 'Signaal geblokkeerd door muur';
+        statusText.textContent = 'De muur slorpt het radiosignaal op. De signaalsterkte (RSSI) zakt meteen en er vallen stuurpakketjes weg.';
+      } else if (n > 50 && rssi > -85) {
+        statusBanner.style.borderLeftColor = 'var(--orange)';
+        statusTitle.textContent = 'Veel storing (Sterk signaal, maar lage kwaliteit)';
+        statusText.textContent = 'Het signaal komt luid binnen (goede RSSI), maar door de ruis kan de ontvanger de gegevens niet goed lezen (dalende LQ).';
+      } else if (d > 400) {
+        statusBanner.style.borderLeftColor = 'var(--orange)';
+        statusTitle.textContent = 'Signaalsterkte daalt door afstand';
+        statusText.textContent = 'Het signaal wordt zwakker door de grote afstand. Zolang er geen storing is, kan de kwaliteit (LQ) nog net voldoende blijven.';
+      } else {
+        statusBanner.style.borderLeftColor = 'var(--green)';
+        statusTitle.textContent = 'Goede verbinding';
+        statusText.textContent = 'Alle opdrachten komen goed aan. Je hebt volledige controle over het toestel.';
+      }
+    }
+
+    function setPreset(dist, noise, wall) {
+      distInput.value = dist;
+      noiseInput.value = noise;
+      wallToggle.checked = wall;
+      updateSim();
+    }
+
+    distInput.addEventListener('input', updateSim);
+    noiseInput.addEventListener('input', updateSim);
+    wallToggle.addEventListener('change', updateSim);
+
+    // Startstatus instellen
+    updateSim();
+  </script>
+</body>
+</html>
