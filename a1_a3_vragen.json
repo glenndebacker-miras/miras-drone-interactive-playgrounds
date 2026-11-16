@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "module": 1,
+    "page": 14,
+    "question": "Een helikopter nadert je vlieggebied. Wat doe je?",
+    "options": [
+      "Voorrang geven en zo snel mogelijk veilig landen.",
+      "Blijven hangen tot de helikopter uitwijkt.",
+      "Boven de helikopter stijgen.",
+      "Doorvliegen zolang je onder 120 meter blijft."
+    ],
+    "correct": 0,
+    "explanation": "Bemande luchtvaart heeft voorrang. Zorg dat je drone geen gevaar vormt en verlaat veilig het vliegpad."
+  },
+  {
+    "id": 2,
+    "module": 1,
+    "page": 15,
+    "question": "Wat betekent VLOS?",
+    "options": [
+      "De drone rechtstreeks en voortdurend in zicht houden.",
+      "Alleen het camerabeeld bekijken.",
+      "De positie op een kaart volgen.",
+      "De drone met een verrekijker volgen."
+    ],
+    "correct": 0,
+    "explanation": "Bij VLOS zie je de drone zonder visuele hulpmiddelen en kun je de omgeving beoordelen."
+  },
+  {
+    "id": 3,
+    "module": 1,
+    "page": 15,
+    "question": "Hoe groot is het toegestane bereik bij een gewone VLOS-vlucht?",
+    "options": [
+      "Dat hangt af van zicht, dronegrootte en omgeving.",
+      "Altijd 500 meter.",
+      "Altijd het maximale radiobereik.",
+      "Altijd de afstand die met een halve batterij haalbaar is."
+    ],
+    "correct": 0,
+    "explanation": "Je moet de drone duidelijk kunnen zien en risico’s kunnen beoordelen. Technisch bereik is geen VLOS-bereik."
+  },
+  {
+    "id": 4,
+    "module": 1,
+    "page": 16,
+    "question": "Wat is de algemene maximale hoogte in OPEN boven vlak terrein, zonder uitzondering of lagere geozonelimiet?",
+    "options": [
+      "120 meter boven het terrein.",
+      "120 meter boven zeeniveau.",
+      "150 meter boven het vertrekpunt.",
+      "300 meter boven het terrein."
+    ],
+    "correct": 0,
+    "explanation": "De algemene grens is 120 meter ten opzichte van het aardoppervlak. Geozones kunnen lagere grenzen opleggen."
+  },
+  {
+    "id": 5,
+    "module": 1,
+    "page": 16,
+    "question": "Wat betekent AMSL?",
+    "options": [
+      "Hoogte boven gemiddeld zeeniveau.",
+      "Hoogte boven het vertrekpunt.",
+      "Afstand tot de piloot.",
+      "Hoogte boven de grond."
+    ],
+    "correct": 0,
+    "explanation": "AMSL gebruikt gemiddeld zeeniveau als referentie. AGL verwijst naar hoogte boven de grond."
+  },
+  {
+    "id": 6,
+    "module": 1,
+    "page": 17,
+    "question": "Wanneer is iemand een betrokken persoon?",
+    "options": [
+      "Na expliciete toestemming én duidelijke veiligheidsinstructies.",
+      "Zodra die naar de drone kijkt.",
+      "Zodra die een toegangsticket koopt.",
+      "Zodra die op openbaar terrein staat."
+    ],
+    "correct": 0,
+    "explanation": "De persoon moet instemmen met deelname en weten wat te doen bij onverwacht gedrag."
+  },
+  {
+    "id": 7,
+    "module": 1,
+    "page": 18,
+    "question": "Op een festivalticket staat dat een drone filmt. Zijn alle bezoekers daardoor betrokken personen?",
+    "options": [
+      "Nee, een vermelding op een ticket volstaat niet.",
+      "Ja, door het ticket te kopen.",
+      "Ja, als de drone zichtbaar is.",
+      "Alleen de bezoekers op de eerste rij."
+    ],
+    "correct": 0,
+    "explanation": "Een algemene aankondiging vervangt geen individuele toestemming en veiligheidsinstructies."
+  },
+  {
+    "id": 8,
+    "module": 1,
+    "page": 19,
+    "question": "Een C1-drone vliegt in A1 onverwacht boven een niet-betrokken persoon. Wat doe je?",
+    "options": [
+      "De overvlucht zo kort mogelijk maken.",
+      "Blijven hangen tot de persoon weggaat.",
+      "Verder filmen omdat het onverwacht gebeurde.",
+      "Recht naar de persoon dalen."
+    ],
+    "correct": 0,
+    "explanation": "Opzettelijk overvliegen is met C1 niet toegestaan. Beperk een onverwachte overvlucht zoveel mogelijk."
+  },
+  {
+    "id": 9,
+    "module": 1,
+    "page": 19,
+    "question": "Wat past bij vliegen met C0 in A1 nabij niet-betrokken personen?",
+    "options": [
+      "Overvliegen zoveel mogelijk vermijden.",
+      "Onbeperkt boven mensen blijven hangen.",
+      "Ook boven elke mensenmenigte vliegen.",
+      "Altijd 150 meter van iedere persoon blijven."
+    ],
+    "correct": 0,
+    "explanation": "Beperk de blootstelling van mensen en wees uiterst voorzichtig. Bijeenkomsten van mensen blijven verboden."
+  },
+  {
+    "id": 10,
+    "module": 1,
+    "page": 20,
+    "question": "Welke minimale horizontale afstand geldt in A3 tot woon-, handels-, industrie- en recreatiegebieden?",
+    "options": [
+      "150 meter.",
+      "30 meter.",
+      "50 meter.",
+      "120 meter."
+    ],
+    "correct": 0,
+    "explanation": "A3 vereist minstens 150 meter horizontale afstand tot deze gebieden, naast de andere voorwaarden."
+  },
+  {
+    "id": 11,
+    "module": 1,
+    "page": 20,
+    "question": "Een wandelaar betreedt je A3-vluchtgebied. Je kunt de veiligheid niet meer garanderen. Wat doe je?",
+    "options": [
+      "De vlucht veilig staken.",
+      "Doorvliegen omdat je er eerst was.",
+      "Alleen op obstakeldetectie vertrouwen.",
+      "Waarschuwen en zonder aanpassing verder vliegen."
+    ],
+    "correct": 0,
+    "explanation": "Pas de vlucht aan. Stop wanneer je de veiligheid niet meer kunt waarborgen."
+  },
+  {
+    "id": 12,
+    "module": 1,
+    "page": 20,
+    "question": "Wat maakt een groep tot een bijeenkomst van mensen?",
+    "options": [
+      "Mensen staan zo dicht dat ze niet goed kunnen uitwijken.",
+      "Er zijn meer dan tien mensen.",
+      "Iedereen kijkt naar een podium.",
+      "Er zijn minstens twee gezinnen."
+    ],
+    "correct": 0,
+    "explanation": "Het gaat om de mogelijkheid om uit te wijken, niet om een vast aantal mensen."
+  },
+  {
+    "id": 13,
+    "module": 1,
+    "page": 20,
+    "question": "Mag een drone van 200 gram in OPEN boven een dichte menigte vliegen?",
+    "options": [
+      "Nee.",
+      "Ja, want hij weegt minder dan 250 gram.",
+      "Ja, als de vlucht korter dan één minuut is.",
+      "Ja, met toestemming van de organisator."
+    ],
+    "correct": 0,
+    "explanation": "Het verbod op overvliegen van bijeenkomsten geldt voor alle subcategorieën van OPEN."
+  },
+  {
+    "id": 14,
+    "module": 1,
+    "page": 22,
+    "question": "Wat is nodig voor FPV-vliegen in OPEN?",
+    "options": [
+      "Een UA-waarnemer naast de piloot die de drone rechtstreeks ziet.",
+      "Alleen een goed camerabeeld.",
+      "Een waarnemer elders met telefonisch contact.",
+      "Alleen een terugkeerfunctie."
+    ],
+    "correct": 0,
+    "explanation": "De waarnemer houdt VLOS en waarschuwt voor risico’s. De piloot blijft verantwoordelijk."
+  },
+  {
+    "id": 15,
+    "module": 1,
+    "page": 22,
+    "question": "Wat is bij een nachtvlucht nodig naast de overige OPEN-voorwaarden?",
+    "options": [
+      "VLOS en een ingeschakeld groen knipperlicht.",
+      "Alleen een wit vast licht.",
+      "Alleen een warmtecamera.",
+      "Geen extra voorziening met GPS."
+    ],
+    "correct": 0,
+    "explanation": "De drone moet zichtbaar blijven en een groen knipperlicht hebben."
+  },
+  {
+    "id": 16,
+    "module": 1,
+    "page": 22,
+    "question": "Mag je in OPEN tijdens de vlucht een klein pakket laten vallen?",
+    "options": [
+      "Nee.",
+      "Ja, onder 250 gram.",
+      "Ja, met een zachte verpakking.",
+      "Ja, onder 10 meter hoogte."
+    ],
+    "correct": 0,
+    "explanation": "In OPEN mag de drone geen materiaal laten vallen. Een lichte of zachte verpakking verandert dit niet."
+  },
+  {
+    "id": 17,
+    "module": 1,
+    "page": 22,
+    "question": "Wat onderscheidt een automatische vlucht van een volledig autonome vlucht?",
+    "options": [
+      "Bij automatisch vliegen kan de piloot ingrijpen.",
+      "Een automatische vlucht gebruikt nooit GPS.",
+      "Een autonome vlucht is handmatig.",
+      "Alleen de vliegsnelheid verschilt."
+    ],
+    "correct": 0,
+    "explanation": "Een vooraf ingestelde route kan automatisch zijn. In OPEN moet de piloot kunnen ingrijpen."
+  },
+  {
+    "id": 18,
+    "module": 1,
+    "page": 15,
+    "question": "Tot welke afstand geldt de beschreven follow-me-uitzondering op VLOS?",
+    "options": [
+      "50 meter van de piloot.",
+      "120 meter van de piloot.",
+      "150 meter van de piloot.",
+      "500 meter van de piloot."
+    ],
+    "correct": 0,
+    "explanation": "De cursus beschrijft deze uitzondering tot maximaal 50 meter van de piloot."
+  },
+  {
+    "id": 19,
+    "module": 2,
+    "page": 24,
+    "question": "Waar controleer je de Belgische geozones vóór een vlucht?",
+    "options": [
+      "Op Droneguide.",
+      "Alleen op de kaart van de dronefabrikant.",
+      "Alleen op een wegenkaart.",
+      "Door te kijken waar anderen vliegen."
+    ],
+    "correct": 0,
+    "explanation": "Droneguide toont de Belgische geozones met hun toegangsvoorwaarden."
+  },
+  {
+    "id": 20,
+    "module": 2,
+    "page": 25,
+    "question": "Je vlucht ligt in twee actieve geozones. Wat geldt?",
+    "options": [
+      "De voorwaarden van beide zones samen.",
+      "Alleen die van de grootste zone.",
+      "Alleen die van de laagste zone.",
+      "Je kiest zelf één zone."
+    ],
+    "correct": 0,
+    "explanation": "Voorwaarden gelden cumulatief. Bij verschillende grenzen geldt de meest beperkende voorwaarde."
+  },
+  {
+    "id": 21,
+    "module": 2,
+    "page": 26,
+    "question": "Waarom controleer je Droneguide vóór iedere vlucht opnieuw?",
+    "options": [
+      "Er kunnen tijdelijke zones of andere activiteitsperioden zijn.",
+      "Je certificaat vervalt na iedere vlucht.",
+      "De droneklasse verandert dagelijks.",
+      "Een eerdere toestemming geldt overal."
+    ],
+    "correct": 0,
+    "explanation": "Tijdelijke zones kunnen ontstaan bij evenementen of noodhulp. Controleer de actuele situatie."
+  },
+  {
+    "id": 22,
+    "module": 2,
+    "page": 31,
+    "question": "Er is geen actieve geozone op je locatie. Wat betekent dit?",
+    "options": [
+      "De algemene regels van je vluchtcategorie blijven gelden.",
+      "Er is geen hoogtelimiet.",
+      "VLOS is niet meer nodig.",
+      "Boven bijeenkomsten vliegen mag."
+    ],
+    "correct": 0,
+    "explanation": "Geen actieve geozone betekent niet dat de algemene regels verdwijnen."
+  },
+  {
+    "id": 23,
+    "module": 2,
+    "page": 32,
+    "question": "Je drone waarschuwt niet voor een verboden zone. Wie blijft verantwoordelijk?",
+    "options": [
+      "De piloot.",
+      "Alleen de fabrikant.",
+      "Alleen de geozonebeheerder.",
+      "Niemand."
+    ],
+    "correct": 0,
+    "explanation": "Een hulpmiddel vervangt de eigen controle van de toepasselijke voorwaarden niet."
+  },
+  {
+    "id": 24,
+    "module": 2,
+    "page": 32,
+    "question": "Wat doet een geobewustzijnssysteem?",
+    "options": [
+      "Waarschuwen voor een mogelijke inbreuk op luchtruimbeperkingen.",
+      "Automatisch vluchttoestemming verlenen.",
+      "De exploitant registreren.",
+      "Garanderen dat elke vlucht legaal is."
+    ],
+    "correct": 0,
+    "explanation": "Geobewustzijn waarschuwt. Geofencing kan toegang blokkeren, maar is niet hetzelfde als toestemming."
+  },
+  {
+    "id": 25,
+    "module": 2,
+    "page": 31,
+    "question": "Welke informatie bieden NOTAMs?",
+    "options": [
+      "Tijdelijke luchtvaartinformatie en beperkingen.",
+      "Batterijgegevens van je drone.",
+      "Namen van alle piloten.",
+      "Polisvoorwaarden."
+    ],
+    "correct": 0,
+    "explanation": "NOTAMs informeren over tijdelijke omstandigheden die relevant zijn voor het luchtruim."
+  },
+  {
+    "id": 26,
+    "module": 2,
+    "page": 31,
+    "question": "Wat bevat de AIP?",
+    "options": [
+      "Luchtruimstructuur en officiële luchtvaartinformatie.",
+      "Alle camera-instellingen.",
+      "Je examenresultaten.",
+      "Verzekeringsprijzen."
+    ],
+    "correct": 0,
+    "explanation": "AIP staat voor Aeronautical Information Publication."
+  },
+  {
+    "id": 27,
+    "module": 2,
+    "page": 25,
+    "question": "Een actieve geozone legt een lagere hoogte op dan de algemene OPEN-grens. Wat doe je?",
+    "options": [
+      "De lagere grens respecteren.",
+      "Altijd 120 meter gebruiken.",
+      "De technische limiet van de drone kiezen.",
+      "Hoger vliegen als je goed zicht hebt."
+    ],
+    "correct": 0,
+    "explanation": "Geozonevoorwaarden gelden bovenop de algemene regels."
+  },
+  {
+    "id": 28,
+    "module": 2,
+    "page": 32,
+    "question": "Waarom moeten geobewustzijnsgegevens actueel zijn?",
+    "options": [
+      "Oude gegevens kunnen nieuwe beperkingen missen.",
+      "Ze vergroten de batterijcapaciteit.",
+      "Ze vervangen de windcontrole.",
+      "Ze verlengen je certificaat."
+    ],
+    "correct": 0,
+    "explanation": "Een systeem kan alleen bruikbaar waarschuwen met relevante, bijgewerkte gegevens."
+  },
+  {
+    "id": 29,
+    "module": 3,
+    "page": 35,
+    "question": "Welke instantie is de Belgische luchtvaartautoriteit?",
+    "options": [
+      "DGLV.",
+      "BIPT.",
+      "De dronefabrikant.",
+      "De verzekeraar."
+    ],
+    "correct": 0,
+    "explanation": "DGLV is bevoegd voor onder meer exploitantregistratie, certificaten en luchtvaartregels in België."
+  },
+  {
+    "id": 30,
+    "module": 3,
+    "page": 35,
+    "question": "Waarop is de indeling OPEN, SPECIFIC en CERTIFIED gebaseerd?",
+    "options": [
+      "Het risico van de vluchtuitvoering.",
+      "Alleen de aankoopprijs.",
+      "Alleen recreatief of betaald gebruik.",
+      "Het aantal motoren."
+    ],
+    "correct": 0,
+    "explanation": "De categorieën zijn gebaseerd op risico. Bij meer risico gelden strengere eisen."
+  },
+  {
+    "id": 31,
+    "module": 3,
+    "page": 35,
+    "question": "Wat beschrijft A3 het best?",
+    "options": [
+      "Vliegen ver van mensen en bevolkte gebieden.",
+      "Vliegen boven menigten.",
+      "Vliegen buiten zicht.",
+      "Vliegen met uitsluitend een FPV-bril."
+    ],
+    "correct": 0,
+    "explanation": "A3 is gericht op vluchten met afstand tot mensen en bepaalde gebieden."
+  },
+  {
+    "id": 32,
+    "module": 3,
+    "page": 38,
+    "question": "Wie wordt als UAS-exploitant geregistreerd?",
+    "options": [
+      "De persoon of organisatie die de UAS exploiteert.",
+      "Elke batterij afzonderlijk.",
+      "Alleen de fabrikant.",
+      "Elke vlucht afzonderlijk."
+    ],
+    "correct": 0,
+    "explanation": "Exploitantregistratie betreft een persoon of organisatie, niet elke drone afzonderlijk."
+  },
+  {
+    "id": 33,
+    "module": 3,
+    "page": 38,
+    "question": "Kunnen exploitant en piloot dezelfde persoon zijn?",
+    "options": [
+      "Ja, met de verantwoordelijkheden van beide rollen.",
+      "Nee, er zijn altijd twee personen nodig.",
+      "Alleen zonder camera.",
+      "Alleen bij oefenvluchten."
+    ],
+    "correct": 0,
+    "explanation": "De exploitant organiseert de exploitatie; de piloot bestuurt de drone. Eén persoon kan beide rollen vervullen."
+  },
+  {
+    "id": 34,
+    "module": 3,
+    "page": 38,
+    "question": "Een drone van 240 gram heeft een camera en is geen speelgoed. Is exploitantregistratie nodig?",
+    "options": [
+      "Ja, de camera kan persoonsgegevens vastleggen.",
+      "Nee, onder 250 gram nooit.",
+      "Alleen boven 50 meter.",
+      "Alleen bij verkoop van beelden."
+    ],
+    "correct": 0,
+    "explanation": "Ook onder 250 gram kan registratie vereist zijn. De speelgoeduitzondering is hier uitgesloten."
+  },
+  {
+    "id": 35,
+    "module": 3,
+    "page": 38,
+    "question": "Waar hoort het exploitantregistratienummer zichtbaar te zijn?",
+    "options": [
+      "Op elke gebruikte drone onder diens verantwoordelijkheid.",
+      "Alleen op de lader.",
+      "Alleen op het pilootcertificaat.",
+      "Alleen in een notitieboek."
+    ],
+    "correct": 0,
+    "explanation": "De cursus beschrijft markering op iedere drone. Bij DRI moet het nummer ook correct ingevoerd zijn."
+  },
+  {
+    "id": 36,
+    "module": 3,
+    "page": 41,
+    "question": "Wat moet je kennen, ook als geen A1/A3-examen verplicht is?",
+    "options": [
+      "De gebruikershandleiding van de drone.",
+      "Alleen de verkoopbrochure.",
+      "Alleen de camera-instellingen.",
+      "Alleen het radiobereik."
+    ],
+    "correct": 0,
+    "explanation": "De handleiding bevat de beperkingen en procedures van het specifieke toestel."
+  },
+  {
+    "id": 37,
+    "module": 3,
+    "page": 42,
+    "question": "Hoe lang zijn A1/A3- en A2-certificaten volgens de cursus geldig?",
+    "options": [
+      "Vijf jaar.",
+      "Eén jaar.",
+      "Twee jaar.",
+      "Onbeperkt."
+    ],
+    "correct": 0,
+    "explanation": "De cursus geeft een geldigheid van vijf jaar vanaf uitgifte. Voor verlenging gelden aanvullende regels."
+  },
+  {
+    "id": 38,
+    "module": 3,
+    "page": 45,
+    "question": "Mag je tegelijk een rijdende auto besturen en een drone bedienen?",
+    "options": [
+      "Nee.",
+      "Ja, bij lage snelheid.",
+      "Ja, met GPS.",
+      "Ja, tijdens een automatische vlucht."
+    ],
+    "correct": 0,
+    "explanation": "Je mag geen drone bedienen terwijl je zelf een rijdend voertuig bestuurt."
+  },
+  {
+    "id": 39,
+    "module": 3,
+    "page": 46,
+    "question": "Je wilt bij een actieve hulpactie vliegen. Wat is naast de overige voorwaarden nodig?",
+    "options": [
+      "Toestemming van de verantwoordelijke hulpdiensten.",
+      "Toestemming van een toeschouwer.",
+      "Alleen een volle batterij.",
+      "Niets extra onder 120 meter."
+    ],
+    "correct": 0,
+    "explanation": "Zonder toestemming mag je niet dichtbij of binnen het gebied van een noodhulpactie vliegen."
+  },
+  {
+    "id": 40,
+    "module": 3,
+    "page": 47,
+    "question": "Waar meld je volgens de cursus onmiddellijk een ernstig drone-incident in België?",
+    "options": [
+      "AAIU(Be).",
+      "Alleen bij de verkoper.",
+      "Alleen bij je opleidingscentrum.",
+      "Alleen op sociale media."
+    ],
+    "correct": 0,
+    "explanation": "AAIU(Be) is de Belgische onderzoekseenheid voor luchtvaartongevallen en ernstige incidenten."
+  },
+  {
+    "id": 41,
+    "module": 4,
+    "page": 50,
+    "question": "Je medicatie maakt je slaperig. Wat doe je?",
+    "options": [
+      "Niet vliegen zolang je alertheid beïnvloed is.",
+      "Alleen laag vliegen.",
+      "Alleen automatische functies gebruiken.",
+      "Koffie drinken en toch vliegen."
+    ],
+    "correct": 0,
+    "explanation": "Slaperigheid en tragere reacties kunnen veilig vliegen onmogelijk maken."
+  },
+  {
+    "id": 42,
+    "module": 4,
+    "page": 51,
+    "question": "Wat kan vermoeidheid veroorzaken?",
+    "options": [
+      "Tragere reacties en minder aandacht voor de omgeving.",
+      "Snellere reacties op storingen.",
+      "Betere afstandsinschatting.",
+      "Meer batterijreserve."
+    ],
+    "correct": 0,
+    "explanation": "Vermoeidheid vermindert alertheid en besluitvorming."
+  },
+  {
+    "id": 43,
+    "module": 4,
+    "page": 51,
+    "question": "Je voelt sterke stress voor een vlucht. Wat is passend?",
+    "options": [
+      "Uitstellen als je niet veilig kunt handelen.",
+      "Snel opstijgen.",
+      "Alleen de camera uitschakelen.",
+      "Dichter bij mensen vliegen."
+    ],
+    "correct": 0,
+    "explanation": "Sterke stress kan tunnelvisie en impulsieve keuzes veroorzaken."
+  },
+  {
+    "id": 44,
+    "module": 4,
+    "page": 51,
+    "question": "Waarom is afstand inschatten ’s nachts moeilijker?",
+    "options": [
+      "Weinig licht vermindert het dieptezicht.",
+      "De drone vliegt altijd sneller.",
+      "GPS werkt ’s nachts niet.",
+      "De hoogte verdubbelt automatisch."
+    ],
+    "correct": 0,
+    "explanation": "Visuele schattingen van afstand, hoogte en snelheid zijn minder betrouwbaar in het donker."
+  },
+  {
+    "id": 45,
+    "module": 4,
+    "page": 51,
+    "question": "Wat kan fel licht doen als je ogen aan het donker gewend zijn?",
+    "options": [
+      "Het nachtzicht tijdelijk verstoren.",
+      "Het nachtzicht meteen verbeteren.",
+      "De reactietijd altijd verkorten.",
+      "Het dronekompas verbeteren."
+    ],
+    "correct": 0,
+    "explanation": "Fel licht verstoort de aanpassing van je ogen aan het donker."
+  },
+  {
+    "id": 46,
+    "module": 4,
+    "page": 52,
+    "question": "Welke reeks beschrijft situationeel bewustzijn?",
+    "options": [
+      "Waarnemen, begrijpen en vooruitdenken.",
+      "Opstijgen, filmen en opladen.",
+      "Registreren, verzekeren en verkopen.",
+      "Versnellen, remmen en landen."
+    ],
+    "correct": 0,
+    "explanation": "Je merkt iets op, begrijpt het risico en anticipeert op wat kan gebeuren."
+  },
+  {
+    "id": 47,
+    "module": 4,
+    "page": 52,
+    "question": "Iemand loopt naar je landingsplek. Wat toont goed situationeel bewustzijn?",
+    "options": [
+      "Het risico herkennen en een veilige aanpak voorbereiden.",
+      "Alleen de batterij controleren.",
+      "Wachten tot de persoon onder de drone staat.",
+      "Aannemen dat die wel uitwijkt."
+    ],
+    "correct": 0,
+    "explanation": "Je moet de waarneming omzetten in begrip en een passende reactie."
+  },
+  {
+    "id": 48,
+    "module": 4,
+    "page": 53,
+    "question": "Waarvoor dient I'M SAFE?",
+    "options": [
+      "Beoordelen of je zelf fit bent om te vliegen.",
+      "De droneklasse bepalen.",
+      "De camera scherpstellen.",
+      "Een geozone openen."
+    ],
+    "correct": 0,
+    "explanation": "De checklist behandelt ziekte, medicatie, stress, alcohol, vermoeidheid en emoties."
+  },
+  {
+    "id": 49,
+    "module": 4,
+    "page": 54,
+    "question": "Welke houding verhoogt het risico?",
+    "options": [
+      "Overmoed: denken dat niets mis kan gaan.",
+      "Eigen grenzen erkennen.",
+      "Feedback aanvaarden.",
+      "Tijd nemen voor voorbereiding."
+    ],
+    "correct": 0,
+    "explanation": "Overmoed kan leiden tot het negeren van beperkingen en veiligheidsmarges."
+  },
+  {
+    "id": 50,
+    "module": 4,
+    "page": 55,
+    "question": "Een opdrachtgever dringt aan, maar je vindt de vlucht onveilig. Wat doe je?",
+    "options": [
+      "Weigeren zolang de vlucht niet veilig kan.",
+      "Vliegen omdat die betaalt.",
+      "Mondeling de verantwoordelijkheid overdragen.",
+      "Korter vliegen zonder het risico aan te pakken."
+    ],
+    "correct": 0,
+    "explanation": "De piloot moet nee zeggen bij onveilige omstandigheden of ongeschiktheid."
+  },
+  {
+    "id": 51,
+    "module": 5,
+    "page": 56,
+    "question": "Wat controleer je bij een vluchtgebied?",
+    "options": [
+      "Terrein, obstakels, mensen en beperkingen.",
+      "Alleen de afstand tot je auto.",
+      "Alleen het uitzicht.",
+      "Alleen telefoonbereik."
+    ],
+    "correct": 0,
+    "explanation": "Beoordeel zowel de fysieke omgeving als de toepasselijke voorwaarden."
+  },
+  {
+    "id": 52,
+    "module": 5,
+    "page": 57,
+    "question": "Waarom bepaal je vooraf een noodlandingsplek?",
+    "options": [
+      "Om bij een probleem een veilige uitwijkmogelijkheid te hebben.",
+      "Om zonder energiereserve te vliegen.",
+      "Om VLOS te mogen verlaten.",
+      "Om hoger te mogen vliegen."
+    ],
+    "correct": 0,
+    "explanation": "Voorbereiding helpt om onverwachte situaties beheerst af te handelen."
+  },
+  {
+    "id": 53,
+    "module": 5,
+    "page": 58,
+    "question": "Waar vind je de maximale windweerstand van je drone?",
+    "options": [
+      "In de gebruikershandleiding.",
+      "In je examenresultaat.",
+      "In een wegenkaart.",
+      "In een fotobewerkingsapp."
+    ],
+    "correct": 0,
+    "explanation": "Respecteer de limieten van het specifieke toestel."
+  },
+  {
+    "id": 54,
+    "module": 5,
+    "page": 58,
+    "question": "De wind zal tijdens je vlucht toenemen. Wat beoordeel je?",
+    "options": [
+      "De omstandigheden gedurende de hele vlucht.",
+      "Alleen de wind bij het opstijgen.",
+      "Alleen het weer morgen.",
+      "Alleen de temperatuur van de controller."
+    ],
+    "correct": 0,
+    "explanation": "De voorbereiding omvat het weer tijdens de volledige geplande vlucht."
+  },
+  {
+    "id": 55,
+    "module": 5,
+    "page": 59,
+    "question": "Je ziet een kleine scheur in een propeller. Wat doe je?",
+    "options": [
+      "Vervangen voordat je vliegt.",
+      "Markeren met een stift en doorvliegen.",
+      "Alleen langzamer vliegen.",
+      "De andere propellers sneller laten draaien."
+    ],
+    "correct": 0,
+    "explanation": "Ook kleine schade kan trillingen, verlies van lift of een defect veroorzaken."
+  },
+  {
+    "id": 56,
+    "module": 5,
+    "page": 59,
+    "question": "Een batterij is opgezwollen. Wat doe je?",
+    "options": [
+      "Niet meer gebruiken.",
+      "Terug in vorm drukken.",
+      "Extra lang opladen.",
+      "Alleen voor korte vluchten gebruiken."
+    ],
+    "correct": 0,
+    "explanation": "Zwelling wijst op schade. Gebruik de batterij niet opnieuw en laat ze correct afvoeren."
+  },
+  {
+    "id": 57,
+    "module": 5,
+    "page": 60,
+    "question": "Hoe kies je een passende RTH-hoogte?",
+    "options": [
+      "Boven de obstakels op de route, binnen de geldende hoogtelimieten.",
+      "Zo hoog als technisch mogelijk.",
+      "Altijd precies 10 meter.",
+      "Zonder de route te bekijken."
+    ],
+    "correct": 0,
+    "explanation": "De terugkeerfunctie moet passen bij zowel de omgeving als de wettelijke beperkingen."
+  },
+  {
+    "id": 58,
+    "module": 5,
+    "page": 60,
+    "question": "Waarom controleer je de maximale horizontale afstand?",
+    "options": [
+      "Om binnen een bruikbaar VLOS-bereik te plannen.",
+      "Om voorbij het radiobereik te vliegen.",
+      "Om geozones uit te schakelen.",
+      "Om registratie te vervangen."
+    ],
+    "correct": 0,
+    "explanation": "Technisch bereik geeft geen toestemming om buiten zicht te vliegen."
+  },
+  {
+    "id": 59,
+    "module": 5,
+    "page": 62,
+    "question": "Waarop let je tijdens het scannen van het luchtruim?",
+    "options": [
+      "Luchtvaartuigen, obstakels, dieren en veranderende omstandigheden.",
+      "Alleen het camerabeeld.",
+      "Alleen het batterijpercentage.",
+      "Alleen de geplande lijn op de kaart."
+    ],
+    "correct": 0,
+    "explanation": "De omgeving verandert. Blijf tijdens de hele vlucht actief kijken."
+  },
+  {
+    "id": 60,
+    "module": 5,
+    "page": 64,
+    "question": "De drone verliest GPS en drijft af. Wat is passend?",
+    "options": [
+      "Volgens de procedure de controle behouden en zo nodig veilig landen.",
+      "Aannemen dat RTH altijd nauwkeurig blijft.",
+      "De controller meteen uitzetten.",
+      "Buiten zicht wachten op GPS."
+    ],
+    "correct": 0,
+    "explanation": "Zonder betrouwbare positionering moet je visueel kunnen ingrijpen volgens de procedure van jouw toestel."
+  },
+  {
+    "id": 61,
+    "module": 5,
+    "page": 64,
+    "question": "Welke voorbereiding is belangrijk bij mogelijk verlies van C2?",
+    "options": [
+      "Een gecontroleerde failsafe die bij de omgeving past.",
+      "Alleen een hoge cameraresolutie.",
+      "Een extra geheugenkaart.",
+      "Automatische functies nooit bekijken."
+    ],
+    "correct": 0,
+    "explanation": "Het gedrag bij verbindingsverlies moet vooraf bekend en correct ingesteld zijn."
+  },
+  {
+    "id": 62,
+    "module": 5,
+    "page": 66,
+    "question": "Wat doe je na de vlucht vóór je opnieuw vliegt?",
+    "options": [
+      "Controleren op schade en afwijkingen.",
+      "Alleen beelden kopiëren.",
+      "Alleen het toestel inpakken.",
+      "Inspectie overslaan na een goede landing."
+    ],
+    "correct": 0,
+    "explanation": "Een inspectie kan problemen zichtbaar maken vóór de volgende start."
+  },
+  {
+    "id": 63,
+    "module": 5,
+    "page": 66,
+    "question": "Wat doe je met een warme batterij vóór het opladen?",
+    "options": [
+      "Laten afkoelen volgens de fabrikantinstructies.",
+      "Meteen met maximale stroom laden.",
+      "Op een verwarming leggen.",
+      "De behuizing openen."
+    ],
+    "correct": 0,
+    "explanation": "De cursus adviseert afkoelen vóór opladen en veilige behandeling volgens de handleiding."
+  },
+  {
+    "id": 64,
+    "module": 5,
+    "page": 67,
+    "question": "Waarom is een vlucht- en onderhoudslogboek nuttig?",
+    "options": [
+      "Om ervaring, afwijkingen en onderhoud op te volgen.",
+      "Om zonder certificaat te vliegen.",
+      "Om geozones vrij te geven.",
+      "Om schade automatisch te herstellen."
+    ],
+    "correct": 0,
+    "explanation": "Een logboek helpt terugkerende problemen herkennen en onderhoud organiseren."
+  },
+  {
+    "id": 65,
+    "module": 6,
+    "page": 69,
+    "question": "Wat is roll?",
+    "options": [
+      "Draaien rond de lengteas: zijwaarts kantelen.",
+      "Draaien rond de verticale as.",
+      "Alleen recht omhoog bewegen.",
+      "Kantelen rond de dwarsas."
+    ],
+    "correct": 0,
+    "explanation": "Roll is een rotatie rond de as van neus naar staart."
+  },
+  {
+    "id": 66,
+    "module": 6,
+    "page": 69,
+    "question": "Wat is pitch?",
+    "options": [
+      "Voor- of achterwaarts kantelen rond de dwarsas.",
+      "Zijwaarts kantelen rond de lengteas.",
+      "Draaien rond de verticale as.",
+      "De batterijspanning verhogen."
+    ],
+    "correct": 0,
+    "explanation": "Pitch kantelt de neus naar boven of beneden."
+  },
+  {
+    "id": 67,
+    "module": 6,
+    "page": 69,
+    "question": "Wat is yaw?",
+    "options": [
+      "Draaien rond de verticale as.",
+      "Draaien rond de lengteas.",
+      "Alleen stijgen zonder draaien.",
+      "Kantelen rond de dwarsas."
+    ],
+    "correct": 0,
+    "explanation": "Yaw verandert de richting waarin de neus wijst door rotatie rond de verticale as."
+  },
+  {
+    "id": 68,
+    "module": 6,
+    "page": 70,
+    "question": "Wat doet een ESC?",
+    "options": [
+      "Het motortoerental regelen.",
+      "De drone registreren.",
+      "De camera op de horizon richten.",
+      "Het certificaat controleren."
+    ],
+    "correct": 0,
+    "explanation": "De elektronische snelheidsregelaar stuurt de motor aan en regelt het toerental."
+  },
+  {
+    "id": 69,
+    "module": 6,
+    "page": 71,
+    "question": "Wat doet tegen sterke wind in vliegen meestal met het energieverbruik?",
+    "options": [
+      "Het verbruik stijgt; de vliegtijd wordt korter.",
+      "Het verbruik daalt altijd.",
+      "Het heeft geen invloed.",
+      "Het laadt de batterij op."
+    ],
+    "correct": 0,
+    "explanation": "De drone moet harder werken. Houd rekening met tegenwind bij de terugvlucht."
+  },
+  {
+    "id": 70,
+    "module": 6,
+    "page": 71,
+    "question": "Waar kan het Venturi-effect de wind versterken?",
+    "options": [
+      "In een smalle doorgang tussen gebouwen.",
+      "Alleen boven open zee.",
+      "Binnen de batterij.",
+      "Uitsluitend op 120 meter hoogte."
+    ],
+    "correct": 0,
+    "explanation": "Lucht kan versnellen in vernauwingen, zoals tussen gebouwen of in een vallei."
+  },
+  {
+    "id": 71,
+    "module": 6,
+    "page": 71,
+    "question": "Waarom is de lijzijde van een gebouw een aandachtspunt?",
+    "options": [
+      "Er kan turbulente lucht ontstaan.",
+      "Er is altijd geen wind.",
+      "De batterij koelt er automatisch.",
+      "Er gelden geen geozonevoorwaarden."
+    ],
+    "correct": 0,
+    "explanation": "Achter obstakels kan de wind onregelmatig zijn en de drone verstoren."
+  },
+  {
+    "id": 72,
+    "module": 6,
+    "page": 72,
+    "question": "Wat kan ijs op een propeller veroorzaken?",
+    "options": [
+      "Minder efficiëntie, extra gewicht en verlies van controle.",
+      "Meer lift zonder extra energie.",
+      "Een langere vliegtijd.",
+      "Een betere radioverbinding."
+    ],
+    "correct": 0,
+    "explanation": "IJs verandert het profiel en de werking van de propeller."
+  },
+  {
+    "id": 73,
+    "module": 6,
+    "page": 72,
+    "question": "Wat kan sterke kou bij een LiPo-batterij veroorzaken?",
+    "options": [
+      "Minder beschikbaar vermogen en kortere vliegtijd.",
+      "Meer capaciteit dan bij de aanbevolen temperatuur.",
+      "Onbeperkte piekstroom.",
+      "Geen enkel effect."
+    ],
+    "correct": 0,
+    "explanation": "Bij lage temperatuur neemt de interne weerstand toe. Respecteer de temperatuurlimieten."
+  },
+  {
+    "id": 74,
+    "module": 6,
+    "page": 72,
+    "question": "Welke omgeving kan communicatie of navigatie verstoren?",
+    "options": [
+      "Een omgeving met krachtige antennes of hoogspanningslijnen.",
+      "Een open veld zonder storingsbronnen.",
+      "Een schone startmat.",
+      "Een papieren kaart."
+    ],
+    "correct": 0,
+    "explanation": "Elektromagnetische interferentie kan radio, kompas en GNSS beïnvloeden."
+  },
+  {
+    "id": 75,
+    "module": 6,
+    "page": 73,
+    "question": "Waarvoor is de Kp-index een maat?",
+    "options": [
+      "Geomagnetische verstoringen door zonneactiviteit.",
+      "Het batterijpercentage.",
+      "De windsnelheid.",
+      "De droneklasse."
+    ],
+    "correct": 0,
+    "explanation": "Geomagnetische verstoringen kunnen satellietnavigatie beïnvloeden."
+  },
+  {
+    "id": 76,
+    "module": 6,
+    "page": 74,
+    "question": "Wat doet de C2-verbinding?",
+    "options": [
+      "Besturingscommando’s en vluchtgegevens uitwisselen.",
+      "Alleen beelden opslaan.",
+      "De batterij opladen.",
+      "Propellers mechanisch vastzetten."
+    ],
+    "correct": 0,
+    "explanation": "Command and Control verbindt het pilootstation met het luchtvaartuig."
+  },
+  {
+    "id": 77,
+    "module": 6,
+    "page": 77,
+    "question": "Wat omvat MTOM?",
+    "options": [
+      "Maximale startmassa inclusief lading en eventuele brandstof.",
+      "Alleen de lege romp.",
+      "Alleen de batterijmassa.",
+      "De maximale motortemperatuur."
+    ],
+    "correct": 0,
+    "explanation": "MTOM is een massalimiet voor het volledige toestel bij het opstijgen."
+  },
+  {
+    "id": 78,
+    "module": 6,
+    "page": 79,
+    "question": "Je drone heeft obstakeldetectie. Wat blijft nodig?",
+    "options": [
+      "De beperkingen kennen en zelf de vlucht bewaken.",
+      "Alleen op sensoren vertrouwen.",
+      "VLOS achterwege laten.",
+      "De terugkeerroute niet controleren."
+    ],
+    "correct": 0,
+    "explanation": "Sensoren kunnen beperkingen hebben, bijvoorbeeld bij weinig licht of slecht weer."
+  },
+  {
+    "id": 79,
+    "module": 6,
+    "page": 80,
+    "question": "Waarom past niet overal dezelfde lost-link-instelling?",
+    "options": [
+      "Obstakels, grondrisico’s en luchtruimbeperkingen verschillen.",
+      "Elke locatie heeft een ander certificaatnummer.",
+      "RTH werkt alleen op vaste dagen.",
+      "Een volle batterij neemt elk risico weg."
+    ],
+    "correct": 0,
+    "explanation": "Kies het gedrag bij verbindingsverlies op basis van toestel en omgeving."
+  },
+  {
+    "id": 80,
+    "module": 6,
+    "page": 82,
+    "question": "Wat doet Direct Remote Identification?",
+    "options": [
+      "Identificatie- en positiegegevens uitzenden.",
+      "De camera stabiliseren.",
+      "Een verzekering afsluiten.",
+      "Een vergunning voor elke geozone verlenen."
+    ],
+    "correct": 0,
+    "explanation": "DRI helpt een vliegende drone aan de geregistreerde exploitant te koppelen."
+  },
+  {
+    "id": 81,
+    "module": 6,
+    "page": 83,
+    "question": "Waarom moet de lading goed vastzitten?",
+    "options": [
+      "Ze kan loskomen of het zwaartepunt verschuiven.",
+      "Ze kan het certificaat laten verlopen.",
+      "Ze kan satellieten uitschakelen.",
+      "Ze bepaalt anders een nieuwe geozone."
+    ],
+    "correct": 0,
+    "explanation": "Een losse of verschoven lading kan stabiliteit en veiligheid in gevaar brengen."
+  },
+  {
+    "id": 82,
+    "module": 6,
+    "page": 83,
+    "question": "Wat doe je vóór onderhoud aan propellers?",
+    "options": [
+      "Uitschakelen en de fabrikantinstructies volgen.",
+      "De motoren langzaam laten draaien.",
+      "Alleen de camera uitschakelen.",
+      "RTH activeren."
+    ],
+    "correct": 0,
+    "explanation": "Voorkom onverwachte beweging tijdens het hanteren of onderhoud."
+  },
+  {
+    "id": 83,
+    "module": 7,
+    "page": 86,
+    "question": "Welke opname kan persoonsgegevens bevatten?",
+    "options": [
+      "Een beeld met een herkenbare persoon.",
+      "Een egaal beeld van de lucht.",
+      "Een losse propeller zonder andere informatie.",
+      "Een tekening van een denkbeeldige drone."
+    ],
+    "correct": 0,
+    "explanation": "Informatie waarmee iemand direct of indirect herkenbaar is, kan een persoonsgegeven zijn."
+  },
+  {
+    "id": 84,
+    "module": 7,
+    "page": 86,
+    "question": "Je neemt toevallig een herkenbare persoon op. Zijn dat persoonsgegevens?",
+    "options": [
+      "Dat kunnen nog steeds persoonsgegevens zijn.",
+      "Toevallige opnames tellen nooit.",
+      "Alleen gepubliceerde beelden tellen.",
+      "Alleen beelden met geluid tellen."
+    ],
+    "correct": 0,
+    "explanation": "Ook onbedoeld vastgelegde informatie kan iemand identificeerbaar maken."
+  },
+  {
+    "id": 85,
+    "module": 7,
+    "page": 87,
+    "question": "Wat betekent dataminimalisatie?",
+    "options": [
+      "Alleen verzamelen wat nodig is voor het doel.",
+      "Zoveel mogelijk filmen voor later.",
+      "Alles onbeperkt bewaren.",
+      "Elke opname openbaar delen."
+    ],
+    "correct": 0,
+    "explanation": "Beperk gegevensverzameling tot wat noodzakelijk is voor het beoogde doel."
+  },
+  {
+    "id": 86,
+    "module": 7,
+    "page": 87,
+    "question": "Wat betekent opslagbeperking?",
+    "options": [
+      "Niet langer bewaren dan nodig.",
+      "Alles altijd vijf jaar bewaren.",
+      "Nooit gegevens verwijderen.",
+      "Alleen grote geheugenkaarten gebruiken."
+    ],
+    "correct": 0,
+    "explanation": "De bewaartermijn moet bij het doel passen."
+  },
+  {
+    "id": 87,
+    "module": 7,
+    "page": 87,
+    "question": "Wat is een kernvoorwaarde voor verwerking van persoonsgegevens?",
+    "options": [
+      "Een geldige juridische basis.",
+      "Een goede camera.",
+      "Een droneverzekering.",
+      "Toestemming om op te stijgen."
+    ],
+    "correct": 0,
+    "explanation": "De cursus noemt onder meer toestemming en gerechtvaardigd belang als mogelijke grondslagen."
+  },
+  {
+    "id": 88,
+    "module": 7,
+    "page": 88,
+    "question": "Iemand stemt in met filmen. Mag je daardoor automatisch publiceren?",
+    "options": [
+      "Nee, controleer of het publiceren ook is toegestaan.",
+      "Ja, voor alle doeleinden.",
+      "Ja, als je geen geld krijgt.",
+      "Ja, met een A1/A3-certificaat."
+    ],
+    "correct": 0,
+    "explanation": "Opnemen en publiceren zijn verschillende vormen van gebruik. Toestemming moet bij het beoogde gebruik passen."
+  },
+  {
+    "id": 89,
+    "module": 7,
+    "page": 89,
+    "question": "Hoe beperk je onnodige persoonsgegevens bij een terreinopname?",
+    "options": [
+      "Een camerahoek kiezen zonder herkenbare personen.",
+      "Iedereen van dichtbij filmen.",
+      "Inzoomen op nummerplaten.",
+      "Meteen onbeveiligd uploaden."
+    ],
+    "correct": 0,
+    "explanation": "Pas de opname aan het doel aan en vermijd onnodige herkenbare informatie."
+  },
+  {
+    "id": 90,
+    "module": 7,
+    "page": 89,
+    "question": "Hoe bewaar je beelden met persoonsgegevens?",
+    "options": [
+      "Beveiligd tegen onbevoegde toegang.",
+      "Standaard op een openbare link.",
+      "Toegankelijk voor iedereen die erom vraagt.",
+      "Op een onbeheerde geheugenkaart."
+    ],
+    "correct": 0,
+    "explanation": "Gegevensbescherming omvat veilige opslag en gecontroleerde toegang."
+  },
+  {
+    "id": 91,
+    "module": 8,
+    "page": 91,
+    "question": "Wat is materiële schade aan een derde?",
+    "options": [
+      "Je drone beschadigt het raam van iemand anders.",
+      "Je eigen propeller slijt.",
+      "Je geheugenkaart is vol.",
+      "Je batterij is leeg."
+    ],
+    "correct": 0,
+    "explanation": "Materiële schade gaat over beschadiging van eigendommen, zoals het raam van iemand anders."
+  },
+  {
+    "id": 92,
+    "module": 8,
+    "page": 91,
+    "question": "Welke situatie is lichamelijk letsel?",
+    "options": [
+      "Een persoon raakt gewond door de drone.",
+      "Een ruit breekt zonder gewonden.",
+      "Een camera wordt onscherp.",
+      "Een geheugenkaart raakt defect."
+    ],
+    "correct": 0,
+    "explanation": "Lichamelijk letsel is schade aan een persoon."
+  },
+  {
+    "id": 93,
+    "module": 8,
+    "page": 91,
+    "question": "Wie zorgt volgens de cursus voor de vereiste verzekering?",
+    "options": [
+      "De UAS-exploitant.",
+      "Altijd de verkoper.",
+      "Elke toeschouwer.",
+      "Droneguide."
+    ],
+    "correct": 0,
+    "explanation": "De exploitant moet zorgen voor passende dekking, ook als een andere piloot vliegt."
+  },
+  {
+    "id": 94,
+    "module": 8,
+    "page": 90,
+    "question": "Wat is het doel van aansprakelijkheidsverzekering?",
+    "options": [
+      "Dekking voor aansprakelijkheid voor schade aan derden.",
+      "Alleen je eigen slijtage vergoeden.",
+      "Vluchttoestemming verlenen.",
+      "Vrijstelling van veiligheidsregels."
+    ],
+    "correct": 0,
+    "explanation": "Deze verzekering beschermt bij schadeclaims van derden, binnen de polisvoorwaarden."
+  },
+  {
+    "id": 95,
+    "module": 8,
+    "page": 91,
+    "question": "Wat kan gebeuren zonder de vereiste verzekering?",
+    "options": [
+      "De exploitant moet mogelijk zelf betalen en kan sancties krijgen.",
+      "De fabrikant betaalt automatisch.",
+      "Er is geen aansprakelijkheid meer.",
+      "Het certificaat dekt alle kosten."
+    ],
+    "correct": 0,
+    "explanation": "Zonder passende dekking kunnen hoge kosten bij de exploitant terechtkomen."
+  },
+  {
+    "id": 96,
+    "module": 9,
+    "page": 94,
+    "question": "Wat is het onderscheid tussen safety en security?",
+    "options": [
+      "Safety betreft onbedoelde schade; security opzettelijk misbruik.",
+      "Beide gaan alleen over batterijen.",
+      "Safety gaat alleen over privacy.",
+      "Security gaat alleen over wind."
+    ],
+    "correct": 0,
+    "explanation": "Beveiliging richt zich op kwaadwillige handelingen; vliegveiligheid op het voorkomen van ongevallen."
+  },
+  {
+    "id": 97,
+    "module": 9,
+    "page": 95,
+    "question": "Waarom kan een geozone rond kritieke infrastructuur bestaan?",
+    "options": [
+      "Om veiligheids- en beveiligingsrisico’s te beperken.",
+      "Om betere foto’s te garanderen.",
+      "Om het radiobereik te vergroten.",
+      "Om exploitantregistratie te vervangen."
+    ],
+    "correct": 0,
+    "explanation": "Geozones kunnen gevoelige locaties beschermen met specifieke voorwaarden."
+  },
+  {
+    "id": 98,
+    "module": 9,
+    "page": 96,
+    "question": "Waarom zijn firmware-updates voor beveiliging belangrijk?",
+    "options": [
+      "Ze kunnen kwetsbaarheden herstellen.",
+      "Ze vervangen een verzekering.",
+      "Ze geven toegang tot elke zone.",
+      "Ze maken inspecties overbodig."
+    ],
+    "correct": 0,
+    "explanation": "Updates kunnen bekende beveiligingsproblemen oplossen. Controleer daarna veilig de werking."
+  },
+  {
+    "id": 99,
+    "module": 9,
+    "page": 97,
+    "question": "Je vermoedt storing of manipulatie door abnormaal dronegedrag. Wat doe je?",
+    "options": [
+      "Zo snel mogelijk veilig landen en onderzoeken.",
+      "Verder filmen.",
+      "Buiten zicht vliegen.",
+      "Alle waarschuwingen uitschakelen."
+    ],
+    "correct": 0,
+    "explanation": "Ga niet door met een mogelijk gecompromitteerd systeem."
+  },
+  {
+    "id": 100,
+    "module": 9,
+    "page": 97,
+    "question": "Hoe behandel je de geheime aanvullende tekens van je exploitantnummer?",
+    "options": [
+      "Je houdt ze privé.",
+      "Je zet ze op sociale media.",
+      "Je deelt ze met omstanders.",
+      "Je gebruikt ze als openbare dronenaam."
+    ],
+    "correct": 0,
+    "explanation": "Maak geheime tekens niet openbaar. Dit staat los van verplichte markering en correcte DRI-invoer."
+  }
+]
